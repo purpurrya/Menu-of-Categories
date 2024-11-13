@@ -1,8 +1,11 @@
 <?php
-$db = new PDO('pgsql:host=127.0.0.1;dbname=categories_db;user=username;password=password;charset=utf8');
+$db = new PDO('pgsql:host=127.0.0.1;dbname=categories_db;user=postgres;password=password');
 
-function exportTopLevelCategories() {
+function export() {
     global $db;
+
+    $indentation = '';
+    
     $stmt = $db->query("SELECT * FROM categories WHERE parent_id IS NULL");
     $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -13,6 +16,6 @@ function exportTopLevelCategories() {
     return $output;
 }
 
-$output = exportTopLevelCategories();
+$output = export();
 file_put_contents('type_b.txt', $output);
 ?>

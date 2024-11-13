@@ -1,5 +1,5 @@
 <?php
-$db = new PDO('pgsql:host=127.0.0.1;dbname=categories_db;user=username;password=password;charset=utf8');
+$db = new PDO('pgsql:host=127.0.0.1;dbname=categories_db;user=postgres;password=password');
 
 function export($parentId = null, $level = 0) {
     global $db;
