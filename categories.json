@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "name": "Пользователи",
+        "alias": "users",
+        "childrens": [
+            {
+                "id": 2,
+                "name": "Создание",
+                "alias": "create",
+                "childrens": []
+            },
+            {
+                "id": 3,
+                "name": "Список",
+                "alias": "list",
+                "childrens": [
+                    {
+                        "id": 4,
+                        "name": "Активные",
+                        "alias": "active",
+                        "childrens": []
+                    },
+                    {
+                        "id": 5,
+                        "name": "Удаленные",
+                        "alias": "deleted",
+                        "childrens": []
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "name": "Поиск",
+                "alias": "search",
+                "childrens": []
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Заявки",
+        "alias": "requests",
+        "childrens": [
+            {
+                "id": 8,
+                "name": "Заявки на подключение",
+                "alias": "connecting",
+                "childrens": []
+            }
+        ]
+    }
+]

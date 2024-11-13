@@ -1,0 +1,1 @@
+CREATE DATABASE categories_db;
